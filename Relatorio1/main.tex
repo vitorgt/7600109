@@ -17,87 +17,31 @@
 \date{\today}
 
 \begin{document}
-
-\begin{figure}[t]
-    \begin{subfigure}{0.49\textwidth}
-        \centering
-        \includegraphics[width=0.8\textwidth]{brasao_usp_pb.png}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}{0.49\textwidth}
-       \centering
-        \includegraphics[width=0.8\textwidth]{LOGO_ICMC_RGB.png}
-    \end{subfigure}
-\end{figure}
-
-\begin{titlepage}
-\centering
-{\Large
-{\color{white}.\\.\\.} \\
-Universidade de São Paulo\\
-Instituto de Ciências Matemáticas e de Computação\\\vspace{1.8mm}
-Instituto de Física de São Carlos}
-\vfill
-Prática 1:\\
-{\Large
-Medidas de grandezas físicas}
-\vfill
-Alunos
-\begin{tabular}{c c}
-    Fabio F. Destro & 10284667\\
-    Vitor G. Torres & 10284952
-\end{tabular}
-\vfill
-Docente
-\begin{tabular}{c c}
-    Osvaldo N. O. Junior
-\end{tabular}
-\vfill
-São Carlos, \today\\
-\end{titlepage}
-%\maketitle
-\newpage
-
-%\tableofcontents
-%\newpage
-
 \begin{abstract}
 \indent
-Contextualização:
-
-A intenção desta primeira aula prática foi nos familiarizar com conceitos de medidas de grandezas físicas e suas incertezas, levando-nos a trabalhar cálculos com precisão de instrumentos e propagação de erros.
-
-Proposito:
-
-E com esses calculos entender 
-
-Metodologia:
-
-
-
-Principais resultados:
-
-
-
-Conclusao:
-
-
+A intenção desta primeira aula prática foi nos familiarizar com conceitos de medidas de grandezas físicas e suas incertezas, levando-nos a trabalhar cálculos com precisão de instrumentos e propagação de erros,
+para assim entender que medições são falhas e tais falhas precisam ser levadas em conta para verificar a confiabilidade de dados de uma certa amostra ou medida, fornecendo a melhor estimativa para um conjuntos de dados.
+Com o intuito de alcançarmos os resultados esperados pela atividade, utilizamos instrumentos de medições de grandezas, sendo eles paquímetro, micrômetro, proveta graduada e balança, junto com cálculos para volumes e derivadas.
+Obtivemos o volume calculado direta e indiretamente do sólido, seu peso e sua densidade, bem como o diâmetro médio de um fio de cobre irregular.
+Através dos resultados obtidos pode-se concluir que a precisão do volume calculado indiretamente é maior do que o calculado diretamente já que o erro encontrado indiretamente é consideravelmente menor. Já com a densidade do sólido, foi possível inferir que a sua composição é alumínio. Em relação ao fio de cobre conclui-se que o desvio padrão das medidas obtidas de seu diâmetro é maior que a imprecisão do micrômetro e portanto o desvio padrão deve ser utilizado como margem de erro para o diâmetro médio do fio.
 
 \end{abstract}
 \newpage
-
 \section{Introdução}
 \indent
-sngjntsrn
+
+Na primeira prática foi estudado métodos para mensurar tamanho, peso, volume e densidade de objetos, assim como instrumentos capazes de fazer tais medida (paquímetro, micrômetro, proveta graduada e balança), além de observar a ocorrência e a propagação de erros, que são ocasionados pela imprecisão dos instrumentos utilizados para medida.
+Como objeto de estudo, foram utilizados um sólido de formato cilíndrico e um fio de cobre e a partir disso, foi calculado o volume do sólido direta e indiretamente, sua densidade e diâmetro do fio.
+
 \section{Metodologia}
 \subsection{Primeiro Procedimento}
 \indent
 
 Para calcularmos o volume do sólido percorremos dois caminhos distintos, o direto e o indireto:
 
-Diretamente: Utilizando uma proveta graduada (precisão de $0.5mm$), com água, aferimos o volume inicial da água, em seguida colocamos o sólido em seu interior e a partir da diferença, temos o volume do sólido.
+Diretamente: Utilizando uma proveta graduada com água (precisão de $0.5mm$), aferimos o volume inicial da água, em seguida colocamos o sólido em seu interior e a partir da diferença, temos o volume do sólido.
 
-Indiretamente: Com o auxílio do paquímetro (precisão de $0.05mm$) medimos cada dimensão necessária para o cálculo de seu volume $V = \pi R^2 h$. Sendo que seu volume é determinado pelo volume de um cilindro grande com a subtração de um menor, como indicado na figura 1.
+Indiretamente: Com o auxílio do paquímetro (precisão de $0.05mm$) medimos cada dimensão necessária para o cálculo de seu volume, a saber $V = \pi R^2 h$. Sendo que seu volume é determinado pelo volume de um cilindro grande com a subtração de um menor, como indicado na figura 1.
 
 \begin{figure}[h]
     \centering
@@ -144,20 +88,20 @@ $\sigma_H = \sigma_D = \sigma_h = \sigma_d = 0.05\;mm\;=$ precisão do paquímet
 \[V = \pi \left(\left(\frac{22.1}{2}\right)^2\cdot 41.05-\left(\frac{12}{2}\right)^2\cdot 18.85\right)+\sigma_V\]
 \[V = 13614.74403750607\pm\sigma_V\]
 \vline
-\[\sigma_V^2=\left(\frac{dV}{dD}\right)^2\sigma_D^2+\left(\frac{dV}{dH}\right)^2\sigma_H^2+\left(\frac{dV}{dd}\right)^2\sigma_d^2+\left(\frac{dV}{dh}\right)^2\sigma_h^2\]
+\[\sigma_V^2=\left(\frac{dV}{dD}\right)^2\cdot\sigma_D^2+\left(\frac{dV}{dH}\right)^2\cdot\sigma_H^2+\left(\frac{dV}{dd}\right)^2\cdot\sigma_d^2+\left(\frac{dV}{dh}\right)^2\cdot\sigma_h^2\]
 \[\sigma_V^2=\left(\left(\frac{2\pi DH}{4}\right)^2+\left(\frac{\pi D^2}{4}\right)^2+\left(-\frac{2\pi dh}{4}\right)^2+\left(-\frac{\pi d^2}{4}\right)^2\right)\cdot0.0025\]
 \[\sigma_V^2=\left(4D^2H^2+D^4+4d^2h^2+d^4\right)\cdot\frac{0.0025\pi^2}{16}\]
-\[\sigma_V=\pm\sqrt{\left(4\left(22.1\right)^2\left(41.05\right)^2+\left(22.1\right)^4+4\left(12\right)^2\left(18.85\right)^2+\left(12\right)^4\right)\cdot\frac{0.0025\pi^2}{16}}\]
+\[\sigma_V=\pm\sqrt{\left(4\cdot\left(22.1\right)^2\cdot\left(41.05\right)^2+\left(22.1\right)^4+4\cdot\left(12\right)^2\cdot\left(18.85\right)^2+\left(12\right)^4\right)\cdot\frac{0.0025\pi^2}{16}}\]
 \[\sigma_V=\pm76.10696380652162\:mm^3\]
 \[V = (13.61474403750607\pm0.07610696380652162)\:cm^3\]
 \[V = (13.61\pm0.08)\:cm^3\]
 
 Comparando o resultado do cálculo direto e indireto do volume do sólido, é possível perceber que os valores encontrados em ambos os métodos são condizentes e estão coerentes, uma vez que os volumes estão próximos e dentro do limite de erro. Além disso, foi possível observar que o método indireto foi mais preciso, uma vez que possui um erro menor, em relação ao método direto.
 
-Isso ocorre já que as medidas obtidas pelo método indireto ocorreram utilizando um instrumento com maior precisão (paquímetro) em relação à proveta graduada mesmo com a propagação de erro para o cálculo do volume indireto.
+Isso ocorre já que para as medidas obtidas pelo método indireto foi utilizado um instrumento com maior precisão, paquímetro, em relação à proveta graduada, mesmo com a propagação de erro do cálculo do volume indireto.
 
 
-\subsection{Segundo Procedimento}
+\subsection{Segundo Procedimiento}
 Dados:
 
 $M = 36.74\;g\; = $ massa do sólido
@@ -171,8 +115,7 @@ $\sigma_M = 0.01\;g\; = $ precisão da balança
 \[\sigma_\rho =\pm 0.015102845745\]
 \[\rho = (2.70 \pm 0.02)\;g/cm^3\]
 
-A partir do cálculo da densidade e com o auxílio de uma tabela com a densidade de diversos materiais foi possível concluir que o material do sólido é o alumínio, já que sua densidade é correspondente já que o alumínio na tabela de referência apresenta valor $2.699\;(g/cm^3)$. Com esses dados, comparando grandezas fisicas com incertezas, utilizando $|x_1-x_2|<2(\sigma_1+\sigma_2)$ foi possível perceber que são equivalentes.
-
+A partir do cálculo da densidade e com o auxílio de uma tabela com a densidade de diversos materiais foi possível concluir que o material do sólido é o alumínio, já que sua densidade é correspondente já que o alumínio, na tabela de densidades apresentada em sala, tem valor $2.699\;(g/cm^3)$. Com esses dados, comparando grandezas físicas com incertezas, utilizando $|x_1-x_2|<2(\sigma_1+\sigma_2)$ foi possível perceber que são equivalentes.
 \subsection{Terceiro Procedimento}
 
 \begin{table}[!ht]
@@ -199,7 +142,14 @@ Além disso, no cálculo da média entre os diâmetro, fazendo a propagação de
 
 Como o desvio padrão foi maior que o erro propagado, deve ser usado o desvio padrão como margem de erro, portanto: $\bar{d} = (2.768 \pm 0.0552)\;mm = (2.77 \pm 0.05)\;mm$
 
-A diferença entre medir o diametro sempre no mesmo ponto ou em pontos diferentes é levar em consideração a variação da forma do objeto.
+A diferença entre medir o diâmetro sempre no mesmo ponto ou em pontos diferentes é levar em consideração a variação da forma do objeto.
 
 \section{Resultados e discussão}
+
+\indent
+
+Através das medidas diretas e indiretas do volume do objeto, portanto, foi possível observar as variações nos resultados bem como a margem de erro para cada medida. Além disso, através do cálculo da densidade do sólido, foi possível identificar que se trata de um objeto de aluminio. Já sobre a medida do diâmetro do fio de cobre, foi possível identificar certa irregularidade em sua extensão e por isso, para um valor preciso foi necessário utilizar diversas medidas em lugares distintos.
+
 \end{document}
+
+
