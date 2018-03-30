@@ -9,145 +9,162 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{color}
-
-\title{{\huge Laboratório de Física}\\{\Large Relatório 1}}
-\author{Fabio DESTRO 10284667\\Vitor TORRES 10284952\\}
-%\date{07 Março 2018}
-\date{\today}
+\usepackage{hyperref}
 
 \begin{document}
 \begin{abstract}
-	\indent
-	A intenção desta primeira aula prática foi nos familiarizar com conceitos de medidas de grandezas físicas e suas incertezas, levando-nos a trabalhar cálculos com precisão de instrumentos e propagação de erros,
-	para assim entender que medições são falhas e tais falhas precisam ser levadas em conta para verificar a confiabilidade de dados de uma certa amostra ou medida, fornecendo a melhor estimativa para um conjuntos de dados.
-	Com o intuito de alcançarmos os resultados esperados pela atividade, utilizamos instrumentos de medições de grandezas, sendo eles paquímetro, micrômetro, proveta graduada e balança, junto com cálculos para volumes e derivadas.
-	Obtivemos o volume calculado direta e indiretamente do sólido, seu peso e sua densidade, bem como o diâmetro médio de um fio de cobre irregular.
-	Através dos resultados obtidos pode-se concluir que a precisão do volume calculado indiretamente é maior do que o calculado diretamente já que o erro encontrado indiretamente é consideravelmente menor. Já com a densidade do sólido, foi possível inferir que a sua composição é alumínio. Em relação ao fio de cobre conclui-se que o desvio padrão das medidas obtidas de seu diâmetro é maior que a imprecisão do micrômetro e portanto o desvio padrão deve ser utilizado como margem de erro para o diâmetro médio do fio.
+\indent
+A
 
 \end{abstract}
 \newpage
 \section{Introdução}
 \indent
-
-Na primeira prática foi estudado métodos para mensurar tamanho, peso, volume e densidade de objetos, assim como instrumentos capazes de fazer tais medida (paquímetro, micrômetro, proveta graduada e balança), além de observar a ocorrência e a propagação de erros, que são ocasionados pela imprecisão dos instrumentos utilizados para medida.
-Como objeto de estudo, foram utilizados um sólido de formato cilíndrico e um fio de cobre e a partir disso, foi calculado o volume do sólido direta e indiretamente, sua densidade e diâmetro do fio.
+A
 
 \section{Metodologia}
-\subsection{Primeiro Procedimento}
+
 \indent
 
-Para calcularmos o volume do sólido percorremos dois caminhos distintos, o direto e o indireto:
+Dois procedimentos, barra fixa à 27cm pesos diferentes, peso fixo com a barra fixada em pontos diferentes
 
-Diretamente: Utilizando uma proveta graduada com água (precisão de $0.5mm$), aferimos o volume inicial da água, em seguida colocamos o sólido em seu interior e a partir da diferença, temos o volume do sólido.
-
-Indiretamente: Com o auxílio do paquímetro (precisão de $0.05mm$) medimos cada dimensão necessária para o cálculo de seu volume, a saber $V = \pi R^2 h$. Sendo que seu volume é determinado pelo volume de um cilindro grande com a subtração de um menor, como indicado na figura 1.
-
-\begin{figure}[h]
-	\centering
-	%\includegraphics[scale=0.1]{a0002.png}
-	\includegraphics[width=0.5\textwidth]{a0002.png}
-	\caption{Representação do sólido a ser estudado}
-	\label{fig:solido}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{IMG_1472.jpg}
+    \caption{Dispositivo para a medida da deflexão $x$ de uma barra de comprimento $l$ fixa em um extremo e carregada no extremo livre. Fonte: Apostila IFSC.}
+    \label{fig:disp}
 \end{figure}
 
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{c c|c|c}
+        Ref. & Identificação & $Massa\pm 0.01\;(g)$ & $F_{peso}\pm0.000098\;(N)$ \\\hline
+        $1:$ & $D1$ & $56.72$ & $0.555856$\\
+        $2:$ & $D1 + D2$ & $109.80$ & $1.076040$\\
+        $3:$ & $D1 + D2 + T4$ & $158.50$ & $1.553300$\\
+        $4:$ & $D1 + D2 + T4 + D3$ & $209.47$ & $2.052806$\\
+        $5:$ & $D1 + D2 + T4 + D3 + D4$ & $258.18$ & $2.530164$\\
+        $6:$ & $D1 + D2 + T4 + D3 + D4 + D6$ & $302.88$ & $2.968224$\\
+        $7:$ & $D1 + D2 + T4 + D3 + D4 + D6 + D9$ & $336.94$ & $3.302012$\\
+        $8:$ & $D1 + D2 + T4 + D3 + D4 + D6 + D9 +T0$ & $383.94$ & $3.762612$\\
+    \end{tabular}
+    \caption{Aferições de massas e seus pesos}
+    \label{tab:pesos}
+\end{table}
+\subsection{Primeiro Procedimento: Diferentes pesos na extremidade da barra fixada à 27cm}
 
-\subsubsection{Volume Direto do Cilindro}
 Dados:
 
-$V_I = 77\;mm\; =$ volume inicial da proveta;
+$C\pm\sigma_C = (0.3\pm0.0005)\;m\;=$ comprimento e precisão do comprimento da barra;
 
-$V_F = 91\;mm\; =$ volume final da proveta;
+$d\pm\sigma_d = (0.00098\pm0.00001)\;m\;=$ espessura e precisão da espessura da barra;
 
-$\sigma_{V_F} = \sigma_{V_I} = 0.5\;mm\;=$ precisão da proveta.
+$b\pm\sigma_b = (0.025\pm0.00005)\;m\;=$ largura e precisão da largura da barra;
 
-\[V = V_F - V_I\]
-\[V = (91 \pm \sigma_{V_F})-(77 \pm \sigma_{V_I})\]
-\[V = 91-77\pm\sigma_{V}\]
-\[V= (14 \pm\sigma_{V})\; cm^3\]
-\[\sigma_{V}^2 = \left(\frac{dV}{dV_F}\right)^2\sigma_{V_F}^2+\left(\frac{dV}{dV_I}\right)^2\sigma_{V_I}^2\]
-\[\sigma_{V} = \pm\sqrt{1^2\cdot0.5^2+1^2\cdot0.5^2}=\pm0.707106781187\]
-\[V= (14 \pm0.71)\; cm^3\]
+$l\pm\sigma_C = (0.27\pm0.0005)\;m\;=$ distenção e precisão do comprimento da barra;
 
+$x_{i}\pm\sigma_x = (0.054\pm0.0005)\;m\;$ = comprimento inicial (deformação zero) e precisão da deformação.
 
-\subsubsection{Volume Indireto do Cilindro}
-Dados:
+Fixada uma barra à $l = 27\;cm$ no suporte para medições e alterando os pesos pendurados em sua extremidade (pesos referenciados na tabela \ref{tab:pesos}), medimos sua deformação $x$ em relação a altura original $x_i$ sem pesos.
 
-$H = 41.05\;mm\;=$ altura do cilindro maior (externo);
-
-$D = 22.1\;mm\;=$ diâmetro do cilindro maior;
-
-$h = 18.85\;mm\;=$ altura do cilindro menor (interno);
-
-$d = 12\;mm\;=$ diâmetro do cilindro menor;
-
-$\sigma_H = \sigma_D = \sigma_h = \sigma_d = 0.05\;mm\;=$ precisão do paquímetro.
-
-\[V = \pi \left(\left(\frac{D}{2}\right)^2\cdot H-\left(\frac{d}{2}\right)^2\cdot h\right)\]
-\[V = \pi \left(\left(\frac{22.1\pm0.05}{2}\right)^2\cdot \left(41.05\pm0.05\right)-\left(\frac{12\pm0.05}{2}\right)^2\cdot \left(18.85\pm0.05\right)\right)\]
-\[V = \pi \left(\left(\frac{22.1}{2}\right)^2\cdot 41.05-\left(\frac{12}{2}\right)^2\cdot 18.85\right)+\sigma_V\]
-\[V = 13614.74403750607\pm\sigma_V\]
-\vline
-\[\sigma_V^2=\left(\frac{dV}{dD}\right)^2\cdot\sigma_D^2+\left(\frac{dV}{dH}\right)^2\cdot\sigma_H^2+\left(\frac{dV}{dd}\right)^2\cdot\sigma_d^2+\left(\frac{dV}{dh}\right)^2\cdot\sigma_h^2\]
-\[\sigma_V^2=\left(\left(\frac{2\pi DH}{4}\right)^2+\left(\frac{\pi D^2}{4}\right)^2+\left(-\frac{2\pi dh}{4}\right)^2+\left(-\frac{\pi d^2}{4}\right)^2\right)\cdot0.0025\]
-\[\sigma_V^2=\left(4D^2H^2+D^4+4d^2h^2+d^4\right)\cdot\frac{0.0025\pi^2}{16}\]
-\[\sigma_V=\pm\sqrt{\left(4\cdot\left(22.1\right)^2\cdot\left(41.05\right)^2+\left(22.1\right)^4+4\cdot\left(12\right)^2\cdot\left(18.85\right)^2+\left(12\right)^4\right)\cdot\frac{0.0025\pi^2}{16}}\]
-\[\sigma_V=\pm76.10696380652162\:mm^3\]
-\[V = (13.61474403750607\pm0.07610696380652162)\:cm^3\]
-\[V = (13.61\pm0.08)\:cm^3\]
-
-Comparando o resultado do cálculo direto e indireto do volume do sólido, é possível perceber que os valores encontrados em ambos os métodos são condizentes e estão coerentes, uma vez que os volumes estão próximos e dentro do limite de erro. Além disso, foi possível observar que o método indireto foi mais preciso, uma vez que possui um erro menor, em relação ao método direto.
-
-Isso ocorre já que para as medidas obtidas pelo método indireto foi utilizado um instrumento com maior precisão, paquímetro, em relação à proveta graduada, mesmo com a propagação de erro do cálculo do volume indireto.
-
-
-\subsection{Segundo Procedimiento}
-Dados:
-
-$M = 36.74\;g\; = $ massa do sólido
-
-$\sigma_M = 0.01\;g\; = $ precisão da balança
-
-\[\rho = \frac{M\;(g)}{V\;(cm^3)} = \frac{(36.74\pm0.01)}{(13.61474403750607\pm0.07610696380652162)}\]
-\[\rho = 2.698545040493467 \pm \sigma_\rho\]
-\[\sigma_\rho^2 = \left(\frac{d\rho}{dM}\right)^2\sigma_M^2+\left(\frac{d\rho}{dV}\right)^2\sigma_V^2\]
-%\[\sigma_\rho = \sqrt{\left(\frac{1}{M}\right)^2 0.01 + \left(-\frac{M}{V^2}\right)^2 0.07610696380652162}\]
-\[\sigma_\rho =\pm 0.015102845745\]
-\[\rho = (2.70 \pm 0.02)\;g/cm^3\]
-
-A partir do cálculo da densidade e com o auxílio de uma tabela com a densidade de diversos materiais foi possível concluir que o material do sólido é o alumínio, já que sua densidade é correspondente já que o alumínio, na tabela de densidades apresentada em sala, tem valor $2.699\;(g/cm^3)$. Com esses dados, comparando grandezas físicas com incertezas, utilizando $|x_1-x_2|<2(\sigma_1+\sigma_2)$ foi possível perceber que são equivalentes.
-\subsection{Terceiro Procedimento}
+\[\sigma_X^2 = \left(\frac{d(x-x_i)}{dx}\right)^2\cdot\sigma_x^2 + \left(\frac{d(x-x_i)}{dx_i}\right)^2\cdot\sigma_x^2\]
+\[\sigma_X = \pm\sqrt{(1)^2\cdot25\cdot10^{-8} + (-1)^2\cdot25\cdot10^{-8}} = \pm\sqrt{5\cdot10^{-7}} = \pm0.0007071067811865475\;m\]
 
 \begin{table}[!ht]
-	\centering
-	\begin{tabular}{c|c}
-		$d\;(mm)$ & $|d_i-\bar{d}|\;(mm)$ \\\hline
-		2.83 & 0.06200\\
-		2.76 & 0.00800\\
-		2.96 & 0.15200\\
-		2.73 & 0.03800\\
-		2.69 & 0.07800\\
-		2.76 & 0.00800\\
-		2.83 & 0.06200\\
-		2.72 & 0.04800\\
-		2.71 & 0.05800\\
-		2.73 & 0.03800\\
-	\end{tabular}
-	\caption{Medidas aferidas e o desvio do padrão}
-	\label{tab:my_label}
+    \centering
+    \begin{tabular}{c c|c|c}
+        Peso Ref & $F_{peso}\pm\sigma_F\;(N)$ & $x\pm\sigma_x\;(m)$ & $(x - x_i)\pm\sigma_X\;(m)$\\\hline
+        & sem pesos & $x_i = 0.054$ & $0.000$\\
+        Ref. $1$ & $0.555856$ & $0.063$ & $0.009$\\
+        Ref. $2$ & $1.076040$ & $0.071$ & $0.017$\\
+        Ref. $3$ & $1.553300$ & $0.078$ & $0.024$\\
+        Ref. $4$ & $2.052806$ & $0.086$ & $0.032$\\
+        Ref. $5$ & $2.530164$ & $0.093$ & $0.039$\\
+        Ref. $6$ & $2.968224$ & $0.100$ & $0.046$\\
+        Ref. $7$ & $3.302012$ & $0.105$ & $0.051$\\
+        Ref. $8$ & $3.762612$ & $0.112$ & $0.058$\\
+    \end{tabular}
+    \caption{Aplicando-se diferentes pesos nota-se diferentes deformações}
+    \label{tab:p1}
 \end{table}
-\[\sum_{i=0}^N \frac{|d_i-\bar{d}|}{N}=\sum_{i=0}^{10} \frac{|d_i-2.768|}{10}=0.0552\]
-\indent
-Além disso, no cálculo da média entre os diâmetro, fazendo a propagação de erros, é possível encontrar: $\bar{d} = (2.768 \pm 0.01)\;mm$.
 
-Como o desvio padrão foi maior que o erro propagado, deve ser usado o desvio padrão como margem de erro, portanto: $\bar{d} = (2.768 \pm 0.0552)\;mm = (2.77 \pm 0.05)\;mm$
+\begin{figure}[!ht]
+    \centering
+    \href{https://www.desmos.com/calculator/lwhpg1by6v}{\includegraphics[width=0.4\textwidth]{XxF.png}}
+    \caption{Grafico de deformação $x - x_i$ pela força $F$ aplicada. \href{https://www.desmos.com/calculator/lwhpg1by6v}{Fonte: Desmos (link)}}
+    \label{gra:XxF}
+\end{figure}
 
-A diferença entre medir o diâmetro sempre no mesmo ponto ou em pontos diferentes é levar em consideração a variação da forma do objeto.
+%Utilizando dois pontos pertencentes à reta $(0.02, 1.29297128241)$ e $(0.05, 3.23242820601)$ obtemos o coeficiente angular.
+Utilizando dois pontos pertencentes à reta $(0.02, 1.3829712824)$ e $(0.05, 3.23242820601)$ obtemos o coeficiente angular.
+
+%\[k = \frac{\Delta y}{\Delta x} = \frac{3.23242820601-1.29297128241}{0.05-0.02} = 64.6485641203\]
+\[k = \frac{\Delta y}{\Delta x} = \frac{3.23242820601-1.3829712824}{0.05-0.02} = 61.6485641203\]
+
+Entao foi possivel calcular o Modulo de Young
+
+%\[E = \frac{4l^3k}{d^3b} = \frac{4\cdot{0.27}^3\cdot64.6485641203}{{0.00098}^3\cdot0.025} = 21.631763765\cdot{10}^{10}\pm\sigma_E\;\left[N\cdot m^{-2}\right]\]
+\[E = \frac{4l^3k}{d^3b} = \frac{4\cdot{0.27}^3\cdot61.6485641203}{{0.00098}^3\cdot0.025} = 20.627947328\cdot{10}^{10}\pm\sigma_E\;\left[N\cdot m^{-2}\right]\]
+\[\sigma_E^2 = \left(\frac{dE}{dl}\right)^2\sigma_l^2 + 
+\left(\frac{dE}{dk}\right)^2\sigma_k^2 + 
+\left(\frac{dE}{dd}\right)^2\sigma_d^2 + 
+\left(\frac{dE}{db}\right)^2\sigma_b^2\]
+\[\sigma_E = \pm\sqrt{
+\left(\frac{12kl^2}{bd^3}\right)^2\cdot0.0005^2 +
+\left(\frac{4l^3}{bd^3}\right)^2\cdot0^2 + 
+\left(-\frac{12kl^3}{bd^4}\right)^2\cdot0.00001^2 + 
+\left(-\frac{4kl^3}{d^3b^2}\right)^2\cdot0.00005^2
+}\]
+\[E = \left(20.627947328\pm0.67440253834\right)\cdot{10}^{10}\;\left[N\cdot m^{-2}\right]\]
+\[E = \left(20.6\pm0.67\right)\cdot{10}^{10}\;\left[N\cdot m^{-2}\right]\]
+
+\subsection{Segundo Procedimento: Mesmo peso na extremidade da barra apoiada em pontos distintos}
+
+Dados:
+
+$C\pm\sigma_C = (0.3\pm0.0005)\;m\;=$ comprimento e precisão do comprimento da barra;
+
+$d\pm\sigma_d = (0.00098\pm0.00001)\;m\;=$ espessura e precisão da espessura da barra;
+
+$b\pm\sigma_b = (0.025\pm0.00005)\;m\;=$ largura e precisão da largura da barra;
+
+$l\pm\sigma_C = (l\pm0.0005)\;m\;=$ distenção e precisão do comprimento da barra;
+
+$x\pm\sigma_x = (x\pm0.0005)\;m\;$ = comprimento inicial (deformação zero) e precisão da deformação.
+
+Fixado o peso Ref. 7 na extremidade da barra movendo-a no suporte para medições, medimos sua deformação $x$.
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{c|c|c|c|c}
+        $l\pm\sigma_C\;(m)$ & $l^3\;(m)$ & $x_f\pm\sigma_{x_f}\;(m)$ & $x_i\pm\sigma_{x_i}\;(m)$ & $(x_f - x_i)\pm\sigma_X\;(m)$\\\hline
+        $0.270$ & $0.019683$ & $0.105$ & $0.054$ & $0.051$\\
+        $0.250$ & $0.015625$ & $0.096$ & $0.052$ & $0.044$\\
+        $0.230$ & $0.012167$ & $0.085$ & $0.051$ & $0.034$\\
+        $0.210$ & $0.009261$ & $0.077$ & $0.050$ & $0.027$\\
+        $0.190$ & $0.006859$ & $0.070$ & $0.050$ & $0.020$\\
+        $0.170$ & $0.004913$ & $0.064$ & $0.050$ & $0.014$\\
+        $0.150$ & $0.003375$ & $0.059$ & $0.050$ & $0.009$\\
+        $0.130$ & $0.002197$ & $0.056$ & $0.050$ & $0.006$\\
+        $0.110$ & $0.001331$ & $0.054$ & $0.050$ & $0.004$\\
+        $0.090$ & $0.000729$ & $0.052$ & $0.050$ & $0.002$\\
+        $0.070$ & $0.000343$ & $0.050$ & $0.049$ & $0.001$\\
+    \end{tabular}
+    \caption{Aplicando-se diferentes pesos nota-se diferentes deformações}
+    \label{tab:p2}
+\end{table}
+
+\begin{figure}[!ht]
+    \centering
+    \href{https://www.desmos.com/calculator/vz1ffqbye1}{\includegraphics[width=0.4\textwidth]{XxL.png}}
+    \caption{Grafico de deformação $x_f - x_i$ pelo comprimento $l^3$. \href{https://www.desmos.com/calculator/vz1ffqbye1}{Fonte: Desmos (link)}}
+    \label{gra:XxL}
+\end{figure}
 
 \section{Resultados e discussão}
 
 \indent
 
-Através das medidas diretas e indiretas do volume do objeto, portanto, foi possível observar as variações nos resultados bem como a margem de erro para cada medida. Além disso, através do cálculo da densidade do sólido, foi possível identificar que se trata de um objeto de aluminio. Já sobre a medida do diâmetro do fio de cobre, foi possível identificar certa irregularidade em sua extensão e por isso, para um valor preciso foi necessário utilizar diversas medidas em lugares distintos.
+A
 
 \end{document}
-
