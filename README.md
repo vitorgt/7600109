@@ -1,5 +1,5 @@
-# 7600109
-General Physics Laboratory I
+# General Physics Laboratory I
+7600109
 
 Institute of Mathematical and Computer Sciences
 
