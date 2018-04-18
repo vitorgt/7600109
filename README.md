@@ -1,5 +1,5 @@
 # General Physics Laboratory I
-7600109
+[7600109](https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=7600109)
 
 Institute of Mathematical and Computer Sciences
 
